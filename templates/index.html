@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+        <div class="header">
+            <h1 style="text-align: center;margin: 6px;font-weight: 400;">Tejaswas Epix Webpage</h1>
+        </div>
+    </head> 
+
+
+    <body style="background-color: #a37e7e;">
+        
+        <div class="my-div" id="my-div">
+            <div class="card" id="card">
+                <H2 style="margin-top: 4px;margin-bottom: 4px;font-weight: 200;">First Blog Post</H2>
+                <h5 style="margin-top: 4px;margin-bottom: 4px;font-size: large;font-weight: 100;">18-10-2025</h5>
+                
+                <p style="margin-top: 7px;margin-bottom: 7px;font-size: large;font-weight: 200;">hi so today this and that happened</p>
+            </div>
+        </div>
+
+
+
+        <div class="bottomstuff">
+            <div class="hiddenstuff" id="hide">
+                <textarea name="heading" id="heading" class="heading" placeholder="Content Heading (max 32 words)" maxlength="32"></textarea>
+                <input type="date" class="date" id="date">
+                <textarea name="entry" id="text" class="textbox"></textarea>
+                <button class="enter" id="enter">Enter</button>
+            </div>
+
+            <button class="newentry" id="entry">new entry</button>
+        </div>
+
+        <script src="{{ url_for('static', filename='main.js') }}"></script>
+    </body>
+</html>
